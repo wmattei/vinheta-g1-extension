@@ -1,0 +1,21 @@
+ {
+    "name": "G1 vinheta",
+    "version": "1.0",
+    "manifest_version": 2,
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "storage",
+        "tabs"
+    ],
+    "content_scripts": [{
+        "js": ["content.js"],
+        "matches": ["<all_urls>"]
+    }],
+    "icons": { 
+        "16": "logo-globo.png",
+        "48": "logo-globo.png",
+        "128": "logo-globo.png" 
+    }
+}
